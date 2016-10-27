@@ -24,7 +24,7 @@
 \fontdir[fonts/]
 
 %%% Configure a directory location for sections
-\newcommand*{\sectiondir}{resume/}
+\newcommand*{\sectiondir}{cv/}
 
 %%% Override color
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -54,15 +54,18 @@
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
-\name{Yuwei}{Jiao}
-\address{}
-\address{Kings tower, 812 King St W, Kitchener, On N2G 1E9, Canada}
-\mobile{(+1) 519-781-2124} 
+\name{Claud D.}{Park}
+\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 22738, Rep. of KOREA}
+\mobile{(+82) 10-9030-1843} 
 %%% Social
-\email{jyuwei@uwaterloo.ca}
-\github{jiaojiaoloveu}
-\linkedin{Yuwei Jiao(Ruby)}
-\homepage{jiaojiaoloveu.top}
+\email{posquit0.bj@gmail.com}
+\homepage{www.posquit0.com}
+\github{posquit0}
+\linkedin{posquit0}
+%%% Optionals
+\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\quote{``Make the change that you want to see in the world."}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Content
@@ -70,18 +73,21 @@
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
   {\today}
-  {Yuwei Jiao~~~·~~~Résumé}
+  {Claud D. Park~~~·~~~Curriculum Vitae}
   {\thepage}
 
 \begin{document}
-%%% Make a header for CV with personal data
+%%% Make a header for CV using personal data
 \makecvheader
 
 %%% Import contents
 \import{\sectiondir}{education.tex}
-\import{\sectiondir}{summary.tex}
+\import{\sectiondir}{skills.tex}
 \import{\sectiondir}{experience.tex}
-%\import{\sectiondir}{extracurricular.tex}
-%\import{\sectiondir}{honors.tex}
+\import{\sectiondir}{extracurricular.tex}
+\import{\sectiondir}{honors.tex}
+\import{\sectiondir}{presentation.tex}
+\import{\sectiondir}{writing.tex}
+\import{\sectiondir}{committees.tex}
 
 \end{document}
