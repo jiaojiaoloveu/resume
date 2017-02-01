@@ -106,7 +106,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.5cm, top=2.5cm, right=2.5cm, bottom=2.5cm, footskip=.5cm}
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=0.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -540,12 +540,12 @@
 \newcommand*{\cventry}[5]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{3.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{16cm}}{\descriptionstyle{#5}} \\
+    \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
 
@@ -598,13 +598,14 @@
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{15.2cm}}
 }{
     \end{tabular*}
+  \vspace{0.5mm}
   \end{center}
 }
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{
 	\skilltypestyle{#1} & \skillsetstyle{#2} 
-  \\
+    \\
 }
 
 % Define an environment for cvitems(for cventry)
@@ -617,7 +618,7 @@
 }{
   \end{itemize}
   \end{justify}
-  \vspace{-2mm}
+  \vspace{-3mm}
 }
 
 
