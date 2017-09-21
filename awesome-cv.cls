@@ -106,7 +106,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=0.5cm}
+\geometry{left=1cm, top=1cm, right=1cm, bottom=1.3cm, footskip=0.2cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -506,7 +506,7 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
+  \par\addvspace{1ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
@@ -517,8 +517,7 @@
 % Usage: \cvsubsection{<subsection-title>}
 \newcommand{\cvsubsection}[1]{
   \phantomsection{}
-  \subsectionstyle{#1}
-}
+  \subsectionstyle{#1}3}
 
 % Define a paragraph for CV
 \newenvironment{cvparagraph}{
@@ -530,6 +529,8 @@
 
 
 % Define an environment for cventry
+% jiaojiao
+% change here if you modify spacing layout
 \newenvironment{cventries}{
   \begin{center}
 }{
@@ -540,12 +541,12 @@
 \newcommand*{\cventry}[5]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{15.5cm} R{3.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
+    \multicolumn{2}{L{19cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
 
@@ -595,7 +596,7 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{15.2cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{16cm}}
 }{
     \end{tabular*}
   \vspace{0.5mm}
@@ -618,7 +619,8 @@
 }{
   \end{itemize}
   \end{justify}
-  \vspace{-3mm}
+  % jiaojiao
+  \vspace{-3.5mm}
 }
 
 
